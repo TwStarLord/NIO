@@ -48,9 +48,12 @@ public class TestBuffer {
 		String str = "abcde";
 		
 		ByteBuffer buf = ByteBuffer.allocate(1024);
-		
+
+//		写数据模式
 		buf.put(str.getBytes());
-		
+
+//		读数据模式
+//		在写数据时使用该方法，会改变 position和limit的值
 		buf.flip();
 		
 		byte[] dst = new byte[buf.limit()];

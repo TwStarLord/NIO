@@ -24,10 +24,10 @@ import org.junit.Test;
  * 
  * 二、通道的主要实现类
  * 	java.nio.channels.Channel 接口：
- * 		|--FileChannel
- * 		|--SocketChannel
- * 		|--ServerSocketChannel
- * 		|--DatagramChannel
+ * 		|--FileChannel  本地文件
+ * 		|--SocketChannel   TCP
+ * 		|--ServerSocketChannel   TCP
+ * 		|--DatagramChannel	UDP
  * 
  * 三、获取通道
  * 1. Java 针对支持通道的类提供了 getChannel() 方法
